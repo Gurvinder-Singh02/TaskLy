@@ -29,7 +29,7 @@ submit.addEventListener('click', async (e) => {
 
     e.preventDefault();
 
-   const res =  await axios.post("http://localhost:3000/api/v1/user/signup", {
+   const res =  await axios.post("https://taskly-6y3t.onrender.com/api/v1/user/signup", {
         email : email.value , password : password.value, firstName : firstName.value, lastName : lastName.value
     });
 

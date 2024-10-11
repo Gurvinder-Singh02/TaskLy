@@ -10,7 +10,7 @@ const fetchUserData = async () => {
     }
 
     try {
-        const response = await axios.get('http://localhost:3000/api/v1/todos/all', {
+        const response = await axios.get('https://taskly-6y3t.onrender.com/api/v1/todos/all', {
             headers: {
                 token: localStorage.getItem("token")
                 // token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MDQxMzljMzZjYmMyZjUxZTViOGViNiIsImlhdCI6MTcyODY3ODEwNn0.cA1um1XLeuNglBfHGfsZDYpCeNENK8S_crC_60gCCYo"
@@ -143,7 +143,7 @@ document.getElementById('task-form').addEventListener('submit', async function (
 
     try {
 
-        const response = await axios.post('http://localhost:3000/api/v1/todos/', taskData, {
+        const response = await axios.post('https://taskly-6y3t.onrender.com/api/v1/todos/', taskData, {
             headers: {
                 token: localStorage.getItem('token')
             }
