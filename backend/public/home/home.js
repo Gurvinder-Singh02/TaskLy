@@ -5,7 +5,7 @@ const fetchUserData = async () => {
     // alert(token)
 
     if (!token) {
-        window.location.href = "/signup";
+        window.location.href = "/sinnnnup";
         return;
     }
 
