@@ -1,0 +1,143 @@
+/* styles.css */
+body {
+    font-family: Space Grotesk;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg {
+    position: fixed;
+}
+
+.logo {
+    margin-top: 60px;
+    background: #fff;
+    color: #FFAC1D;
+    display: flex;
+    gap: 4px;
+    padding: 0px 35px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 25px;
+    font-size: 22px;
+    letter-spacing: -0.9px;
+    font-weight: 400;
+    line-height: 0;
+
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+    box-shadow: 0 0 40px 5px #FFAC1D55;
+}
+
+h1 {
+    /* margin-top: 220px; */
+    font-size: 92px;
+    letter-spacing: -8px;
+    line-height: 0.9;
+    text-align: center;
+}
+
+.head {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bg-cover {
+    top: -10px;
+    position: absolute;
+}
+
+.tagline {
+    margin-top: -50px;
+    font-size: 16px;
+    color: #9d9d9d;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: -0.9px;
+}
+
+.btn-1 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+    font-family: Space Grotesk;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    gap: 10px;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    z-index: 98;
+}
+
+.btn-1:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+}
+
+.btn-1:hover img {
+    transform: translateX(10px) scale(1.5);
+}
+
+img {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.footer {
+    margin-top: 130px;
+    text-align: center;
+    color: #b4b4b4;
+    font-size: 12px;
+    z-index: 12;
+}
+
+.footer,
+.footer p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+.footer img {
+    width: 15px;
+    height: 15px;
+}

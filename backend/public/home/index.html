@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+    <script type="module" src="home.js" defer></script> <!-- Ensure home.js is loaded -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+</head>
+
+<body>
+
+    <main>
+
+        <div class="fc center">
+            <div class="top f">
+                <div class="btn f" id="add-btn">
+                    <img src="../src/add.svg" alt="add">
+                    <p>Add Tasks</p>
+                </div>
+                <img src="../src/dots.svg" width="20" alt="">
+                <div class="btn f org " id="clear-btn">
+                    <img src="../src/Vector.svg" alt="add">
+                    <p>Clear Add</p>
+                </div>
+            </div>
+
+
+
+            <div class="bottom fc">
+                <div class="name" id="greet">
+                    <h1>Hey Guri 😃</h1>
+                    <h5>Just 3 More task to complete 🥳</h5>
+                    <h2 class="count f">3</h2>
+                </div>
+
+                <div class="tasks fc" id="tasks">
+
+                    <form id="task-form" class="task fc">
+                        <!-- Task Title Input -->
+
+                        <!-- User / Cohort Input -->
+                        <input type="text" id="task-title" name="task-title" placeholder="Harkirat cohort 3.0" required>
+
+                        <div class="two f">
+                            <input type="text" id="task-desc" name="task-desc" placeholder="Complete All Assignments"
+                                required>
+
+                            <div class="f">
+                                <select id="priority" name="priority" required>
+                                    <option value="Low">Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button class="btn" type="submit">Submit Task</button>
+                    </form>
+
+                    <!-- <div class="task">
+                        <h3>Complete All Assignments</h3>
+                        <h5> Harkirat cohort 3.0 </h5>
+                        <div class="metrics">
+                            <div class="left">
+                                <img src="../src/task/watch.svg" alt="">
+                                <p class="time"> 31 July 2024</p>
+                            </div>
+                            <div class="badge">
+                                <div class="circle"></div>
+                                <p>In Progress</p>
+                            </div>
+                            <p>1 Hr ago</p>
+
+                        </div>
+                        <div class="priority">
+                            <p>Low</p>
+                            <img src="../src/task/low.svg" alt="">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; made with <img
+                    src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Beating%20Heart.png"
+                    alt="Beating Heart" width="25" height="25" />
+                By <a href="https://gxuri.in" target="_blank">GXURI</a> - A minimal project of Cohort 3.0</p>
+            <p>
+                <a href="https://github.com/Gurvinder-Singh02" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" width="25"
+                        height="25" />
+                </a>
+            </p>
+        </footer>
+    </main>
+
+
+</body>
+
+</html>

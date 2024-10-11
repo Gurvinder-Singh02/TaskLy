@@ -1,0 +1,143 @@
+/* styles.css */
+body {
+    font-family: Space Grotesk;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.bg {
+    position: fixed;
+    z-index: 0;
+}
+main {
+   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #f3f4f6;
+    border: 1.5px solid #E1E3E6;
+    width: 400px;
+    border-radius: 16px;
+    position: relative;
+    z-index: 999;
+}
+
+.header,
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    font-weight: 500;
+    letter-spacing: -0.5;
+}
+
+.left {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    background-color: #fff;
+    margin: 0 10px 10px 10px;
+    border: 1.5px solid #E1E3E6;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    padding: 20px;
+
+}
+
+input {
+    font-family: Space Grotesk;
+    border: 1.5px solid #E1E3E6;
+    border-radius: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.password{
+    position: relative;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.eye{
+    position: absolute;
+    right: 15px;
+    top: 40px;
+
+}
+
+button {
+    font-family: Space Grotesk;
+    border: 1.5px solid #E1E3E6;
+    color: #fff;
+    background-color: black;
+    border-radius: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+form p {
+    text-align: center;
+    color: #5d5d5d;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.footer {
+    margin-top: 130px;
+    text-align: center;
+    color: #b4b4b4;
+    font-size: 12px;
+    z-index: 12;
+}
+
+.footer,
+.footer p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+.footer img {
+    width: 15px;
+    height: 15px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.back-btn{
+    cursor: pointer;
+}

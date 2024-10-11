@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-ly</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/form.css">
+</head>
+
+<body>
+    <main class="main">
+        <img class="bg" src="./sign-bg.svg" alt="" srcset="">
+        <div class="container">
+            <div class="header">
+                <div class="left back-btn" onclick="window.location.href='../index.html';">
+                    <img src="./arrow.svg" style="transform: rotate(180deg) scale(0.7) " alt="">
+                    <p>Back</p>
+                </div>
+                <p>
+                    Sign In
+                </p>
+
+            </div>
+            <form>
+
+                <label class="form-label" for="email">Email</label>
+                <input type="email" id="email" class="form-control" required>
+
+                <div class="password">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" id="password" class="form-control" required>
+                    <span onclick="togglePass()" class="eye"> <img src="./eye-close.svg" alt="" srcset=""> </span>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+                <p>Don't have an account ? <a href="../signup/">Sign up</a></p>
+            </form>
+
+
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; made with <img
+                src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Beating%20Heart.png"
+                alt="Beating Heart" width="25" height="25" />
+            By <a href="https://gxuri.in" target="_blank">GXURI</a> - A minimal project inspired by Cohort 3.0</p>
+        <p>
+            <a href="https://github.com/Gurvinder-Singh02" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" width="25"
+                    height="25" />
+            </a>
+        </p>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
