@@ -30,7 +30,7 @@ submit.addEventListener('click', async (e) => {
 
     try {
         // Make the POST request to sign in
-        let res = await axios.post("http://localhost:3000/api/v1/user/signin", {
+        let res = await axios.post("https://taskly-6y3t.onrender.com/api/v1/user/signin", {
             email: email.value,
             password: password.value
         });
